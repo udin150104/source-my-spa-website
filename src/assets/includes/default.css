@@ -1,0 +1,37 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    background-color: #f9f9f9;
+}
+
+.ico {
+    width: 12px;
+    height: 12px;
+    filter: grayscale(100%) brightness(50%) contrast(10%);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+hr{
+    border:0px solid;
+    border-top:1px solid rgb(231, 231, 231)
+}
