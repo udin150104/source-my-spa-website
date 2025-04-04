@@ -1,4 +1,4 @@
-import { state, SEOManager, Template } from '../core';
+import { SEOManager, Template } from '../core';
 import PageTemplate from "./templates/PageTemplate";
 
 class InfomationPage {
@@ -60,6 +60,10 @@ class InfomationPage {
             <small><code>Version 1.0.1</code></small>
             <ul>
               <li>Perbaikan Routing</li>
+            </ul>
+            <small><code>Version 1.0.2</code></small>
+            <ul>
+              <li>Perbaikan styles</li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,6 @@
-import { state, SEOManager, Template } from './../core';
-import PageTemplate from "./templates/PageTemplate";
 import { calculateAge } from '../libs/age';
+import { SEOManager, Template } from './../core';
+import PageTemplate from "./templates/PageTemplate";
 
 class About {
   constructor() {
@@ -33,7 +33,7 @@ class About {
       Seorang Software Developer Lulusan Universitas Swasta di Yogyakarta, jurusan Teknik Informatika (S1 - S.Kom). Berfokus pada pemprograman berbasis web. Pengalaman dalam bidang ini sejak kuliah (2015 | KKP - Skripsi) sampai saat ini ${today.getFullYear()}, bermula dari mengerjakan Tugas KKP (Kuliah Kerja Praktik) dengan bahasa pemprograman PHP, JavaScript, HTML dan CSS secara Native dengan menggunakan Editor Notepad++ pada saat proses itulah ketertarikan itu muncul 😁, hingga kini banyak pengalaman yang telah didapatkan dan dikarenakan perkembangan teknologi yang sangat cepat dituntut untuk selalu belajar terus. 
     `;
     const parag2 = `
-      Saat ini membuka jasa freelance pembuatan/pengembangan website (cari tambahan 😅), seluruh proyek yang pernah saya tangani bersifat <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a> memastikan kerahasiaan dan keamanan informasi klien.
+      Saat ini membuka jasa freelance pembuatan/pengembangan website (cari tambahan 😅), seluruh proyek yang pernah saya tangani bersifat <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a> memastikan kerahasiaan dan keamanan informasi klien.
     `;
     const parag3 = `
       Terbiasa bekerja baik secara individu maupun tim, dengan pengalaman dalam menejemen tugas dan kolaborasi tim menggunakan Trello, Slack, GitLabs, Github, Zoom, Ms. Team dll.  
