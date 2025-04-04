@@ -1,6 +1,6 @@
-import SEOManager from "./SeoManager";
+import LoadManager from "./LoadManager";
+import SEOManager from "./SEOManager";
 import state from "./State";
 import Template from "./Template";
-import LoadManager from "./LoadManager";
 
-export {SEOManager, state, Template, LoadManager};
+export { LoadManager, SEOManager, state, Template };

@@ -1,4 +1,4 @@
-import { state, SEOManager, Template } from './../core';
+import { SEOManager, Template } from './../core';
 import PageTemplate from "./templates/PageTemplate";
 
 class Portofolio {
@@ -96,7 +96,7 @@ class Portofolio {
             <h3>Pengalaman</h3>
             <p>
                 <b> Desember 2024 - Februari 2025 | Jasa Freelance - Software Developer</b> <br/>
-                Proyek Pribadi 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>. Fitur : Absensi, Gaji, Keuangan, Gudang dan laporan<br/>
+                Proyek Pribadi 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>. Fitur : Absensi, Gaji, Keuangan, Gudang dan laporan<br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -109,7 +109,7 @@ class Portofolio {
             </p>
             <p>
                 <b>Agustus 2023 - November 2023 | Krenovator Sdn Bhd - OutSystems Developer</b> <br/>
-                Bergabung selama 3 bulan, Terlibat dalam pengembangan aplikasi untuk keperluan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
+                Bergabung selama 3 bulan, Terlibat dalam pengembangan aplikasi untuk keperluan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
                 <ul>
                     <li>Repointing data dari database lama ke database baru</li>
                     <li>Mengimplementasikan desain UI/UX yang disediakan oleh tim(atas permintaan klien) kedalam Platform Outsystems</li>
@@ -122,7 +122,7 @@ class Portofolio {
             </p>
             <p>
                 <b>Pertengahan 2022 - 2022 | Jasa Freelance - Software Developer</b> <br/>
-                Proyek Pribadi pertengahan tahun 2022, 6 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
+                Proyek Pribadi pertengahan tahun 2022, 6 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -136,7 +136,7 @@ class Portofolio {
             </p>
             <p>
                 <b>Pertengahan 2020 - 2020 | Jasa Freelance - Software Developer</b> <br/>
-                Proyek Pribadi pertengahan tahun 2020, 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
+                Proyek Pribadi pertengahan tahun 2020, 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan Perusahaan dalam negeri dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -150,7 +150,7 @@ class Portofolio {
             </p>
             <p>
                 <b>2019 - Juli 2023 | PT. Pilar Cipta Solusi Integratika - Software Developer</b> <br/>
-                Bergabung kembali (di kontak), Sifat Tetap, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>. Dari proyek website profile perusahaan, proyek aplikasi manajemen file sampai proyek aplikasi manajemen persuratan. <br/>
+                Bergabung kembali (di kontak), Sifat Tetap, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>. Dari proyek website profile perusahaan, proyek aplikasi manajemen file sampai proyek aplikasi manajemen persuratan. <br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -164,7 +164,7 @@ class Portofolio {
             </p>
             <p>
                 <b>Pertengahan 2018 - 2018 | Jasa Freelance - Software Developer</b> <br/>
-                Proyek Pribadi pertengahan tahun 2018, 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan UMKM dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>. Proyek pergudangan mencatat stock barang UMKM.<br/>
+                Proyek Pribadi pertengahan tahun 2018, 3 Bulan, Terlibat dalam pengembangan aplikasi untuk keperluan UMKM dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>. Proyek pergudangan mencatat stock barang UMKM.<br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -177,7 +177,7 @@ class Portofolio {
             </p>
             <p>
                 <b>2018 - 2019 | CV. Devolusi Media Digital - Software Developer</b> <br/>
-                Bergabung tahun 2018 - 2019, Sifat Kontrak, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
+                Bergabung tahun 2018 - 2019, Sifat Kontrak, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>.<br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
@@ -191,7 +191,7 @@ class Portofolio {
             </p>
             <p>
                 <b>2017 - 2018 | PT. Pilar Cipta Solusi Integratika - Software Developer</b> <br/>
-                Bergabung tahun 2017 - 2018 (bulannya lupa 😅, se-ingat saya 1 tahun pas), Sifat Tetap, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> 🗎 NDA <i>(Non-Disclosure Agreement)</i></a>. Dari proyek website profile perusahaan, proyek aplikasi manajemen file sampai proyek aplikasi manajemen persuratan. <br/>
+                Bergabung tahun 2017 - 2018 (bulannya lupa 😅, se-ingat saya 1 tahun pas), Sifat Tetap, Terlibat dalam pengembangan aplikasi untuk keperluan perusahaan dan klien perusahaan dengan ketentuan <a href="https://kontrakhukum.com/article/nda-adalah/" target="_blank"> NDA <i>(Non-Disclosure Agreement)</i></a>. Dari proyek website profile perusahaan, proyek aplikasi manajemen file sampai proyek aplikasi manajemen persuratan. <br/>
                 <ul>
                     <li>Mengembangkan modul CRUD (Create, Read, Update dan Delete) dalam pengelolaan data aplikasi web base</li>
                     <li>Mengembangkan Fitur lain dalam pengelolaan aplikasi web base seusai kebutuhan klien</li>
