@@ -43,17 +43,20 @@ const PageTemplate = (data) => `
           Blogs 
         </a>
       </li>
-      <li>
-        <a href="/informasi" data-link class="${getRouteSegment('informasi')}"> 
-          <img src="${info}" class="ico" alt="ico info - Informasi" />
-          Info 
-        </a>
-      </li>
     </ul>
   </nav>
   <main>
     {{content}}
   </main>
 `;
+/**
+ * 
+      <li>
+        <a href="/informasi" data-link class="${getRouteSegment('informasi')}"> 
+          <img src="${info}" class="ico" alt="ico info - Informasi" />
+          Info 
+        </a>
+      </li>
+ */
 
 export default PageTemplate;
