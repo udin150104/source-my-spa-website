@@ -106,51 +106,53 @@ class Portofolio {
                 <ul>
                     <li>
                         <strong>2024 – 2025 | Freelance Software Developer</strong><br>
-                        Membangun aplikasi internal perusahaan (Absensi, Gaji, Keuangan, Gudang, Laporan)<br>
-                        Tools: HTML, CSS, JS, PHP Native, Laravel, MySQL
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun aplikasi internal perusahaan (Absensi, Gaji, Keuangan, Gudang, Laporan) <br>
+                        Bekerja individu
                     </li>
                     <li>
                         <strong>2023 | Krenovator Sdn Bhd – OutSystems Developer</strong><br>
+                        Peran : Frontend <br/>
                         Migrasi data, implementasi UI di platform OutSystems<br>
-                        Tools: HTML, CSS, JS, jQuery, OutSystems
+                        Bekerja dalam tim
                     </li>
                     <li>
                         <strong>2022 | Freelance Project (6 Bulan)</strong><br>
-                        Pengembangan aplikasi internal perusahaan dengan Laravel dan MySQL<br>
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun aplikasi pendaftaran keanggotaan untuk sebuah instansi <br>
                         Bekerja dalam tim
                     </li>
                     <li>
                         <strong>2020 | Freelance Project (3 Bulan)</strong><br>
-                        Proyek internal perusahaan menggunakan Laravel<br>
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun aplikasi internal perusahaan <br>
                         Bekerja individu
                     </li>
                     <li>
                         <strong>2019 – 2023 | PT. Pilar Cipta Solusi Integratika</strong><br>
-                        Aplikasi manajemen file & persuratan (Web-based)<br>
-                        Tools: CodeIgniter, Laravel, Vue, React, Docker, REST API
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Berkolaborasi dalam membangun dan mengembangkan Aplikasi manajemen file & persuratan<br>
+                        Berkolaborasi dalam membangun dan mengembangkan Website Company Profile Klien<br>
+                        Bekerja dalam tim
                     </li>
                     <li>
                         <strong>2018 | Freelance Developer (3 Bulan)</strong><br>
-                        Sistem stok pergudangan UMKM<br>
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun Sistem informasi pergudangan UMKM<br>
                         Bekerja individu
                     </li>
                     <li>
                         <strong>2018 – 2019 | CV. Devolusi Media Digital</strong><br>
-                        Proyek aplikasi internal & klien (NDA)<br>
-                        Tools: CodeIgniter, Laravel, Git
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun dan mengembangkan aplikasi internal & klien (NDA)<br>
+                        Bekerja dalam tim
                     </li>
                     <li>
                         <strong>2017 – 2018 | PT. Pilar Cipta Solusi Integratika</strong><br>
-                        Proyek awal: aplikasi profil, manajemen file & persuratan<br>
-                        Tools: CodeIgniter, PostgreSQL, Git, Trello
+                        Peran : Backend, Frontend, Fullstack <br/>
+                        Membangun dan mengembangkan aplikasi profil, manajemen file & persuratan<br>
+                        Bekerja dalam tim
                     </li>
-                </ul>
-                <h2>✨ Catatan Tambahan</h2>
-
-                <ul>
-                    <li>Semua proyek berada dalam lingkup Non-Disclosure Agreement (NDA).</li>
-                    <li>Terbiasa bekerja dalam berbagai skenario: mandiri, tim lokal, maupun tim remote lintas negara.</li>
-                    <li>Memiliki kemampuan komunikasi lintas bahasa (Bahasa Indonesia, Melayu, Bahasa Inggris dasar).</li>
                 </ul>
             </div>
         </div>
