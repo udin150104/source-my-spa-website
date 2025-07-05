@@ -8,6 +8,25 @@ class Blogs {
     };
   }
 
+  injectTemplate(html, data) {
+    return html.replace(/\{\{(.*?)\}\}/g, (_, key) => {
+      const keys = key.trim().split('.');
+      let value = data;
+
+      for (const k of keys) {
+        value = value?.[k];
+        if (value === undefined) return '';
+      }
+
+      return value;
+    });
+  }
+  
+  async loadHtmlContent() {
+    const res = await fetch('/pages/blogs.html');
+    return await res.text();
+  }
+
   setSeo() {
     // Atur tag SEO
     const title = 'Blogs';
@@ -24,18 +43,16 @@ class Blogs {
     this.render(); // Render ulang view
   }
 
-  render() {
+  async render() {
     this.setSeo();
+    const loadHtml = await this.loadHtmlContent();
+
+    let html = this.injectTemplate(loadHtml)
+
     const data = {
-      content: `
-        <div id="page-container">
-          <div class="section">
-            <h1>Blogs</h1>
-            <p>Cooming Soon 😁</p>
-          </div>
-        </div>
-      `,
+      content: html
     };
+
     return Template.render(PageTemplate(), data);
 
   }

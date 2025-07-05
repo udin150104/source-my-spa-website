@@ -1,7 +1,13 @@
 import { defineConfig } from 'vite';
 import obfuscatorPlugin from 'rollup-plugin-obfuscator';
+import string from 'vite-plugin-string';
 
 export default defineConfig({
+  // plugins: [
+  //   string({
+  //     include: ['**/*.html'],
+  //   }),
+  // ],
   build: {
     minify: 'terser',
     terserOptions: {

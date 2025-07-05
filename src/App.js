@@ -80,18 +80,20 @@ class App {
         return params;
     }
 
-    renderView(route, params = {}) {
+    async renderView(route, params = {}) {
         const view = this.routes[route] || this.routes['/404'];
         const appElement = document.getElementById('app');
 
-        setTimeout(() => {
-            appElement.innerHTML = view.render(params);
+        setTimeout( async () => {
+            // appElement.innerHTML = view.render(params);
+            const html = await view.render(params); 
+            appElement.innerHTML = html;
+            // Panggil onMount saat view dimuat
+            if (view.onMount) {
+                view.onMount();
+            }
         },1000);
 
-        // Panggil onMount saat view dimuat
-        if (view.onMount) {
-            view.onMount();
-        }
     }
 
     start() {

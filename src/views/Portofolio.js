@@ -8,6 +8,11 @@ class Portofolio {
         };
     }
 
+    async loadHtmlContent() {
+        const res = await fetch('/pages/portofolio.html');
+        return await res.text();
+    }
+
     setSeo() {
         // Atur tag SEO
         const title = 'Portofolio';
@@ -24,151 +29,128 @@ class Portofolio {
         this.render(); // Render ulang view
     }
 
-    render() {
+    injectTemplate(html, data) {
+        return html.replace(/\{\{(.*?)\}\}/g, (_, key) => {
+            const keys = key.trim().split('.');
+            let value = data;
+
+            for (const k of keys) {
+                value = value?.[k];
+                if (value === undefined) return '';
+            }
+
+            return value;
+        });
+    }
+
+    async render() {
         this.setSeo();
+
+        const loadHtml = await this.loadHtmlContent();
+        let html = this.injectTemplate(loadHtml);
         const data = {
-            content: `
-        <div id="page-container">
-            <div class="section">
-                <h1>Portofolio & Pengalaman</h1>
-                <h2>Kompetensi & Teknologi</h2>    
-            
-                <h3>Front-End</h3>
-                <ul>
-                    <li><strong>Bahasa & Framework:</strong> HTML, CSS (Bootstrap, Bulma)</li>
-                    <li><strong>JavaScript:</strong> CommonJS, Modern JS, OOP, jQuery, TypeScript</li>
-                    <li><strong>Library / Framework:</strong> Vue, React</li>
-                </ul>
-
-                <h3>Back-End</h3>
-                <ul>
-                    <li><strong>PHP:</strong> Native, OOP, CodeIgniter, Laravel</li>
-                    <li><strong>Python:</strong> Flask</li>
-                </ul>
-
-                <h3>Database</h3>
-                <ul>
-                    <li><strong>RDBMS:</strong> MySQL, PostgreSQL, SQLite</li>
-                    <li><strong>Query:</strong> CRUD, Join, Aggregation, Indexing</li>
-                </ul>
-
-                <h3>API & Integrasi Teknologi</h3>
-                <ul>
-                    <li><strong>Teknologi:</strong> RESTful API, JSON, Microservices</li>
-                    <li><strong>Tools:</strong> Postman</li>
-                </ul>
-
-                <h3>Mobile Development</h3>
-                <ul>
-                    <li><strong>Framework:</strong> React Native</li>
-                    <li><strong>Konsep:</strong> State, Props, Context, Navigation</li>
-                </ul>
-
-                <h3>Konsep Arsitektur & Toolchain</h3>
-                <ul>
-                    <li><strong>Arsitektur:</strong> MVC, SPA</li>
-                    <li><strong>Toolchain:</strong> Vite, SCSS/SASS, Webpack</li>
-                    <li><strong>Security:</strong> CSP, CORS</li>
-                </ul>
-
-                <h3>Deployment & Konfigurasi</h3>
-                <ul>
-                    <li><strong>Server:</strong> Shared Hosting, VPS</li>
-                    <li><strong>Teknologi:</strong> NGINX, CI/CD, Docker, Load Balancer</li>
-                </ul>
-
-                <h3>Manajemen Proyek & Tim</h3>
-                <ul>
-                    <li><strong>Tools:</strong> Trello, GitHub, GitLab, Slack, Microsoft Teams, Zoom</li>
-                </ul>
-            
-                <hr/>
-                <h2>🎓 Pendidikan</h2>
-
-                <ul>
-                    <li>
-                        <strong>2011 – 2017</strong><br>
-                        Universitas Respati Yogyakarta<br>
-                        S1 Teknik Informatika (S.Kom) – Yogyakarta
-                        <ul>
-                        <li><strong>KKP:</strong> Sistem Informasi Raport SMA</li>
-                        <li><strong>Skripsi:</strong> Sistem Pakar Enneagram untuk Menentukan Kepribadian Seseorang</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>2007 – 2010</strong><br>
-                        Madrasah Aliyah Negeri Sintang – Kalimantan Barat<br>
-                        Jurusan: Ilmu Pengetahuan Sosial (IPS)
-                    </li>
-                </ul>
-                <hr/>
-                <h2>🧩 Pengalaman Kerja</h2>
-                <ul>
-                    <li>
-                        <strong>2024 – 2025 | Freelance Software Developer</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun aplikasi internal perusahaan (Absensi, Gaji, Keuangan, Gudang, Laporan) <br>
-                        Bekerja individu
-                    </li>
-                    <li>
-                        <strong>2023 | Krenovator Sdn Bhd – OutSystems Developer</strong><br>
-                        Peran : Frontend <br/>
-                        Migrasi data, implementasi UI di platform OutSystems<br>
-                        Bekerja dalam tim
-                    </li>
-                    <li>
-                        <strong>2022 | Freelance Project (6 Bulan)</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun aplikasi pendaftaran keanggotaan untuk sebuah instansi <br>
-                        Bekerja dalam tim
-                    </li>
-                    <li>
-                        <strong>2020 | Freelance Project (3 Bulan)</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun aplikasi internal perusahaan <br>
-                        Bekerja individu
-                    </li>
-                    <li>
-                        <strong>2019 – 2023 | PT. Pilar Cipta Solusi Integratika</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Berkolaborasi dalam membangun dan mengembangkan Aplikasi manajemen file & persuratan<br>
-                        Berkolaborasi dalam membangun dan mengembangkan Website Company Profile Klien<br>
-                        Bekerja dalam tim
-                    </li>
-                    <li>
-                        <strong>2018 | Freelance Developer (3 Bulan)</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun Sistem informasi pergudangan UMKM<br>
-                        Bekerja individu
-                    </li>
-                    <li>
-                        <strong>2018 – 2019 | CV. Devolusi Media Digital</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun dan mengembangkan aplikasi internal & klien (NDA)<br>
-                        Bekerja dalam tim
-                    </li>
-                    <li>
-                        <strong>2017 – 2018 | PT. Pilar Cipta Solusi Integratika</strong><br>
-                        Peran : Backend, Frontend, Fullstack <br/>
-                        Membangun dan mengembangkan aplikasi profil, manajemen file & persuratan<br>
-                        Bekerja dalam tim
-                    </li>
-                </ul>
-            </div>
-        </div>
-    `,
+            content: html
         };
         return Template.render(PageTemplate(), data);
 
     }
 
     onMount() {
-        const changeMessageBtn = document.getElementById('change-message-btn');
-        if (changeMessageBtn) {
-            changeMessageBtn.addEventListener('click', () => {
-                this.updateMessage('Message Changed!');
+        const sliders = document.querySelectorAll('.slider-wrapper');
+
+        sliders.forEach(wrapper => {
+            const slider = wrapper.querySelector('.image-collection');
+            const prevBtn = wrapper.querySelector('.prev-btn');
+            const nextBtn = wrapper.querySelector('.next-btn');
+
+            // Navigasi tombol
+            prevBtn?.addEventListener('click', () => {
+                slider.scrollBy({ left: -300, behavior: 'smooth' });
             });
-        }
+
+            nextBtn?.addEventListener('click', () => {
+                slider.scrollBy({ left: 300, behavior: 'smooth' });
+            });
+
+            let isDown = false;
+            let isDragging = false;
+            let startX = 0;
+            let scrollLeft = 0;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                isDragging = false;
+                slider.classList.add('active');
+                startX = e.pageX;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+                setTimeout(() => isDragging = false, 0); // reset agar klik bisa setelah mouse up
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                isDragging = true;
+                e.preventDefault();
+                const x = e.pageX;
+                const walk = (x - startX) * 1.5;
+                slider.scrollLeft = scrollLeft - walk;
+            });
+
+            // Touch support
+            slider.addEventListener('touchstart', (e) => {
+                isDown = true;
+                isDragging = false;
+                startX = e.touches[0].pageX;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('touchend', () => {
+                isDown = false;
+                setTimeout(() => isDragging = false, 0);
+            });
+
+            slider.addEventListener('touchmove', (e) => {
+                if (!isDown) return;
+                isDragging = true;
+                const x = e.touches[0].pageX;
+                const walk = (x - startX) * 1.5;
+                slider.scrollLeft = scrollLeft - walk;
+            });
+
+            // Gambar klik → modal
+            const images = slider.querySelectorAll('.img-collection-item');
+            images.forEach(img => {
+                img.setAttribute('draggable', 'false'); // prevent default browser drag
+                img.addEventListener('click', (e) => {
+                    if (isDragging) return; // ✅ Jangan buka modal jika drag
+                    const modal = document.getElementById('image-modal');
+                    const modalImg = document.getElementById('modal-image');
+                    modal.classList.remove('d-none');
+                    modalImg.src = img.src;
+                });
+            });
+        });
+
+        // ❌ Tutup modal
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('image-modal').classList.add('d-none');
+        });
+
+        document.getElementById('image-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'image-modal') {
+                document.getElementById('image-modal').classList.add('d-none');
+            }
+        });
+
     }
 }
 

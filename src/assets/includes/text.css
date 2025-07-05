@@ -1,0 +1,63 @@
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+.text-primary {
+  color: #0d6efd !important;
+}
+.text-success {
+  color: #198754 !important;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+.text-warning {
+  color: #ffc107 !important;
+}
+.text-info {
+  color: #0dcaf0 !important;
+}
+.text-dark {
+  color: #212529 !important;
+}
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+.fw-normal {
+  font-weight: normal !important;
+}
+.fw-light {
+  font-weight: 300 !important;
+}
+.italic {
+  font-style: italic !important;
+}
+.uppercase {
+  text-transform: uppercase !important;
+}
+.lowercase {
+  text-transform: lowercase !important;
+}
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.fs-1 { font-size: 2.5rem; }
+.fs-2 { font-size: 2rem; }
+.fs-3 { font-size: 1.75rem; }
+.fs-4 { font-size: 1.5rem; }
+.fs-5 { font-size: 1.25rem; }
+.fs-6 { font-size: 1rem; }
