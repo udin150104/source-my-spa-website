@@ -1,6 +1,6 @@
 # Source My Single Page Application Website
 
-`version 1.0.2`
+`version 1.1.0`
 
 ```
 node --version V22.14.0
