@@ -7,13 +7,31 @@
 @import url('./includes/padding.css');
 @import url('./includes/margin.css');
 
-.counter-flag{
+.counter-flag {
   position: fixed;
-  top:20px;
+  top: 20px;
   right: -230px;
-  margin:0px 10px 0px 0px;
+  margin: 0px 10px 0px 0px;
 }
-.counter-flag:hover{
+
+.counter-flag:hover {
   right: 0;
   transition: 0.5s
+}
+
+#google_translate_element {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+
+@media screen and (max-width:768px) {
+  #google_translate_element {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    margin: 10px;
+    height: auto;
+  }
 }

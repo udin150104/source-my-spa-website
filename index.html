@@ -5,27 +5,56 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="
+
+  <!-- ✅ PERBAIKAN CSP -->
+<meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
-  script-src 'self' http://localhost:* 'unsafe-inline' 'unsafe-eval';
-  style-src 'self' http://localhost:* 'unsafe-inline';
-  img-src 'self' http://localhost:* http://www.w3.org https://s01.flagcounter.com data:;
-  font-src 'self' http://localhost:*;
-  connect-src 'self' http://localhost:*;
-  frame-src 'none';
+  script-src 'self' 'unsafe-inline' https://translate.google.com https://translate.googleapis.com https://translate-pa.googleapis.com https://www.gstatic.com http://localhost:*;
+  style-src 'self' 'unsafe-inline' https://translate.googleapis.com https://www.gstatic.com http://localhost:*;
+  img-src 'self' data: https://*.googleusercontent.com https://s01.flagcounter.com https://fonts.gstatic.com https://www.google.com https://translate.googleapis.com http://localhost:*;
+  font-src 'self' https://fonts.gstatic.com http://localhost:*;
+  connect-src 'self' https://translate-pa.googleapis.com https://translate.googleapis.com http://localhost:*;
+  frame-src https://translate.google.com https://www.gstatic.com;
   object-src 'none';
   base-uri 'self';
   form-action 'self';
   upgrade-insecure-requests;
 " />
+
+
+
   <title>SPA Website App</title>
 </head>
 
 <body>
   <div id="app"></div>
-  
-  <a href="https://info.flagcounter.com/joHg" class="counter-flag"><img src="https://s01.flagcounter.com/count2/joHg/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- ✅ Aset utama aplikasi -->
   <script type="module" src="/src/main.js"></script>
+
+  <!-- ✅ Flag Counter -->
+  <a href="https://info.flagcounter.com/joHg" class="counter-flag">
+    <img
+      src="https://s01.flagcounter.com/count2/joHg/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+      alt="Flag Counter" border="0">
+  </a>
+  <!-- ✅ Google Translate Element -->
+  <div id="google_translate_element"></div>
+
+  <!-- ✅ Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'id',
+        includedLanguages: 'id,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>
