@@ -7,14 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ✅ PERBAIKAN CSP -->
-<meta http-equiv="Content-Security-Policy" content="
+  <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
   script-src 'self' 'unsafe-inline' https://translate.google.com https://translate.googleapis.com https://translate-pa.googleapis.com https://www.gstatic.com http://localhost:*;
   style-src 'self' 'unsafe-inline' https://translate.googleapis.com https://www.gstatic.com http://localhost:*;
-  img-src 'self' data: https://*.googleusercontent.com https://s01.flagcounter.com https://fonts.gstatic.com https://www.google.com https://translate.googleapis.com http://localhost:*;
+  img-src 'self' data: 
+    https://*.googleusercontent.com 
+    https://s01.flagcounter.com 
+    https://fonts.gstatic.com 
+    https://www.google.com 
+    https://translate.googleapis.com 
+    https://www.gstatic.com 
+    https://translate.google.com 
+    http://localhost:*;
   font-src 'self' https://fonts.gstatic.com http://localhost:*;
-  connect-src 'self' https://translate-pa.googleapis.com https://translate.googleapis.com http://localhost:*;
-  frame-src https://translate.google.com https://www.gstatic.com;
+  connect-src 'self' 
+    https://translate-pa.googleapis.com 
+    https://translate.googleapis.com 
+    http://localhost:*;
+  frame-src 
+    https://translate.google.com 
+    https://www.gstatic.com 
+    https://translate.googleapis.com;
   object-src 'none';
   base-uri 'self';
   form-action 'self';
