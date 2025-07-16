@@ -6,3 +6,14 @@
 @import url('./includes/grid.css');
 @import url('./includes/padding.css');
 @import url('./includes/margin.css');
+
+.counter-flag{
+  position: fixed;
+  top:20px;
+  right: -230px;
+  margin:0px 10px 0px 0px;
+}
+.counter-flag:hover{
+  right: 0;
+  transition: 0.5s
+}
