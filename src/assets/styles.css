@@ -21,13 +21,14 @@
 
 #google_translate_element {
   position: fixed;
-  bottom: 0;
+  bottom: 100px;
   right: 0;
   margin: 10px;
   background-color: white;
   padding:10px;
   border:1px solid #ccc;
   border-radius: 20px;
+  
 }
 
 #google_translate_element select{
@@ -39,11 +40,13 @@
 
 @media screen and (max-width:768px) {
   #google_translate_element {
-    position: absolute;
-    bottom: auto;
-    top: 0px;
-    right: 0;
+    position: fixed;
+    bottom: 100px;
+    right: -150px;
     margin: 10px;
     height: auto;
+  }
+  #google_translate_element:hover{
+    right: 0px;
   }
 }
