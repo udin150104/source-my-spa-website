@@ -127,7 +127,7 @@ hr {
 
 .slider-wrapper {
     position: relative;
-    display: flex;
+    display: inline-grid;
     align-items: center;
     overflow: hidden;
     margin:10px;

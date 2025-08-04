@@ -37,12 +37,13 @@ class App {
             await this.simulateLoading();
 
             // Render view setelah loading selesai
-            
+
             this.renderView(route, params);
             LoadManager.complete(); // Selesaikan progress bar
         } else {
             this.renderView('/404');
         }
+
     }
 
     extractRouteAndParams(path) {
@@ -84,15 +85,36 @@ class App {
         const view = this.routes[route] || this.routes['/404'];
         const appElement = document.getElementById('app');
 
-        setTimeout( async () => {
+        setTimeout(async () => {
             // appElement.innerHTML = view.render(params);
-            const html = await view.render(params); 
+            const html = await view.render(params);
             appElement.innerHTML = html;
             // Panggil onMount saat view dimuat
             if (view.onMount) {
                 view.onMount();
             }
-        },1000);
+
+            if (document.querySelector("body > .skiptranslate")) {
+                console.log("found . skiptranslate");
+                const el = document.querySelector("body > .skiptranslate");
+                if (el) {
+                    el.style.display = "none";
+                }
+                const eil = document.querySelector("body > .skiptranslate > iframe > .skiptranslate");
+                if (eil) {
+                    eil.style.display = "none";
+                }
+                document.body.removeAttribute("style");
+                // document.querySelector("body .skiptranslate").style.display = "none";
+            }
+
+            if (document.querySelector(".translated-ltr")) {
+                const el = document.querySelector("body > .skiptranslate > iframe > .skiptranslate");
+                if (el) {
+                    el.style.display = "none";
+                }
+            }
+        }, 1000);
 
     }
 

@@ -1,6 +1,8 @@
 #app>main {
     margin: 0;
     padding: 0;
+    padding-bottom: 200px !important;
+    background-color: white;
 }
 
 #app>main>#home-container {
@@ -8,7 +10,7 @@
     flex-direction: column;
     margin: auto;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     justify-content: center;
     /* Pusatkan secara horizontal */
     align-items: center;
@@ -146,25 +148,46 @@
     margin: 5px;
 }
 
-#app>main>#page-container {
+#app>main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+}
+
+#app>main>#page-container {
+    display: inline-flex;
+    flex-grow: 1;
     /* width: calc(100vw - 120px); */
-    padding-left: 100px;
+    margin-left: 100px;
     background-color: white;
 }
 
-#app>main>#page-container>.section{
+#app>main>#footer {
+    display: inline-flex;
+    /* flex-grow: 1; */
+    /* width: 100%; */
+    margin-left: 100px;
+    background-color: white;
+}
+
+.image-flag>a>img {
+    width: 100% !important;
+}
+
+#app>main>#page-container>.section {
     margin: 10px;
-    padding-bottom: 110px;
+    /* padding-bottom: 110px; */
 }
 
 @media screen and (max-width:1024px) {
-    
+
     #app>main>#page-container {
         padding: 0;
-        padding-left: 100px;
+        /* padding-left: 100px; */
+        margin-left: 100px;
+    }
+
+    #app>main>#footer>.image-flag>a>img {
+        width: 100%;
     }
 }
 
@@ -190,14 +213,14 @@
         align-items: center;
         align-content: center;
         gap: 20px;
-        z-index:9999;
+        z-index: 9999;
     }
 
     #app>.sidebar>.logo {
         display: none;
     }
 
-    #app>.sidebar>ul.content{
+    #app>.sidebar>ul.content {
         display: flex;
         width: 100vw;
         justify-content: space-between;
@@ -208,16 +231,43 @@
         margin: 0px 10px;
         overflow: auto;
     }
-    #app>.sidebar>ul.content>li>a{
+
+    #app>.sidebar>ul.content>li>a {
         width: 50px;
         height: 50px;
         font-size: 10px;
         text-align: center;
     }
+
     #app>main>#page-container {
         padding: 0;
         /* width: calc(100vw - 20px); */
         padding-left: 0px;
+        margin-left: 0px;
     }
-    
+
+    #app>main>#footer {
+        display: inline-flex;
+        /* flex-grow: 1; */
+        /* width: 100%; */
+        margin-left: 0px;
+        background-color: white;
+    }
+
+    #app>main>#footer>.image-flag>a>img {
+        width: 100%;
+    }
+
+    #app>main>#home-container>.section>.header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #app>main>#home-container>.section>.header>div>small{
+        font-size: 11px;
+    }
 }

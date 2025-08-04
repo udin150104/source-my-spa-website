@@ -41,6 +41,11 @@ const PageTemplate = (data) => `
   </nav>
   <main>
     {{content}}
+    <div id="footer" class="p-3">
+      <div class="image-flag">
+        <a href="https://info.flagcounter.com/1uJ5"><img src="https://s05.flagcounter.com/map/1uJ5/size_l/txt_000000/border_FFFFFF/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
+      </div>
+    </div>
   </main>
 `;
 
