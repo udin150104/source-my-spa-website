@@ -11,8 +11,8 @@ const app = new App();
 
 app.addRoute('/', new Home());
 app.addRoute('/about', new About());
-app.addRoute('/portofolio', new Portofolio());
-app.addRoute('/blogs', new Blogs());
+// app.addRoute('/portofolio', new Portofolio());
+// app.addRoute('/blogs', new Blogs());
 // app.addRoute('/informasi', new InfomationPage());
 app.addRoute('/404', new NotFound());
 

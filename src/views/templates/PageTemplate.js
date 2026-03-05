@@ -25,18 +25,6 @@ const PageTemplate = (data) => `
           Tentang Saya 
         </a>
       </li>
-      <li>
-        <a href="/portofolio" data-link class="${getRouteSegment('portofolio')}"> 
-          <img src="/images/identification.svg" class="ico" alt="ico identification - Portofolio" />
-          Portofolio 
-        </a>
-      </li>
-      <li>
-        <a href="/blogs" data-link class="${getRouteSegment('blogs')}"> 
-          <img src="/images/bookOpen.svg" class="ico" alt="ico book open - Blogs" />
-          Blogs 
-        </a>
-      </li>
     </ul>
   </nav>
   <main>
